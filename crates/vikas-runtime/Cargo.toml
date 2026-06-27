@@ -1,0 +1,21 @@
+[package]
+name = "vikas-runtime"
+version = "0.1.0"
+edition = "2021"
+description = "Vikas.js JavaScript Runtime"
+build = "build.rs"
+
+[dependencies]
+v8 = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+regex = { workspace = true }
+lazy_static = { workspace = true }
+clap = { workspace = true }
+vikas-http = { path = "../vikas-http" }
+
+[[bin]]
+name = "vikas-runtime"
+path = "src/main.rs"

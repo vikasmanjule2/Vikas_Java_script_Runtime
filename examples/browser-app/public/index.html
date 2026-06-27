@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vikas.js Browser Demo</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel">
+        <p class="eyebrow">Served by Vikas.js</p>
+        <h1>Build JavaScript from a Rust-powered runtime.</h1>
+        <p id="message">
+          This browser page is being served by the Vikas.js development server.
+        </p>
+
+        <div class="actions">
+          <button id="countButton" type="button">Click counter</button>
+          <a href="/api/health" target="_blank" rel="noreferrer">API health</a>
+        </div>
+      </section>
+
+      <section class="status" aria-label="Runtime status">
+        <span>Runtime</span>
+        <strong>Rust + V8</strong>
+        <span>Server</span>
+        <strong>vikas dev</strong>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

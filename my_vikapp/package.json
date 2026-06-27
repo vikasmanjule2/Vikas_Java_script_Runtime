@@ -1,0 +1,12 @@
+{
+  "name": "my_vikapp",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vikas dev --port 3000",
+    "test": "vikas test"
+  },
+  "dependencies": {
+    "vikas": "0.1.0"
+  }
+}
